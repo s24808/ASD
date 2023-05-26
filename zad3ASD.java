@@ -10,6 +10,12 @@ public class ASD3 {
 
         //Wyświetlanie wyniku
 
+        System.out.println("Tablica jest ograniczona ze względu na ograniczoną pamięć");
+        System.out.println();
+        System.out.println("Maksymalna wartość liczb: " + max);
+        System.out.println("Rozmiar tablicy: 100 000");
+        System.out.println("Wynik sortowania: ");
+
         int[] tabquicksort = tab.clone(); //Klonowanie tablicy wejściowej
         long startTime = System.currentTimeMillis(); //Start timer
         quickSort(tabquicksort, 0, tabquicksort.length - 1);
